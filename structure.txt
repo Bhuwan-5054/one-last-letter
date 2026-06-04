@@ -1,0 +1,76 @@
+one-last-letter/
+├── public/                      # static assets
+│   ├── paper-plane.svg
+│   └── grain.png
+├── src/
+│   ├── app/
+│   │   ├── (landing)/
+│   │   │   └── page.tsx
+│   │   ├── builder/
+│   │   │   └── page.tsx
+│   │   ├── preview/
+│   │   │   └── page.tsx
+│   │   ├── e/
+│   │   │   └── [slug]/
+│   │   │       └── page.tsx
+│   │   ├── api/
+│   │   │   ├── ai/
+│   │   │   │   ├── suggest-messages/route.ts
+│   │   │   │   ├── suggest-memories/route.ts
+│   │   │   │   └── draft-letter/route.ts
+│   │   │   ├── publish/route.ts
+│   │   │   ├── voice-upload/route.ts
+│   │   │   └── turnstile-verify/route.ts
+│   │   ├── layout.tsx
+│   │   ├── globals.css
+│   │   └── expired/page.tsx
+│   ├── components/
+│   │   ├── ui/
+│   │   │   ├── AmbientBackground.tsx
+│   │   │   ├── GlassButton.tsx
+│   │   │   ├── CinematicText.tsx
+│   │   │   ├── ProgressStars.tsx
+│   │   │   └── PaperPlane.tsx
+│   │   ├── builder/
+│   │   │   ├── ToneSelector.tsx
+│   │   │   ├── SenderScreen.tsx
+│   │   │   ├── RecipientScreen.tsx
+│   │   │   ├── DateScreen.tsx
+│   │   │   ├── MessagesEditor.tsx
+│   │   │   ├── MemoriesEditor.tsx
+│   │   │   ├── VoiceRecorder.tsx
+│   │   │   ├── LetterEditor.tsx
+│   │   │   └── ReviewScreen.tsx
+│   │   └── experience/
+│   │       ├── SceneManager.tsx
+│   │       ├── Scene0_Loading.tsx
+│   │       ├── Scene1_Counter.tsx
+│   │       ├── Scene2_Messages.tsx
+│   │       ├── Scene3_MemoryConstellation.tsx
+│   │       ├── Scene4_Realization.tsx
+│   │       ├── Scene5_Voice.tsx
+│   │       ├── Scene6_Heart.tsx
+│   │       ├── Scene7_Letter.tsx
+│   │       ├── Scene8_Choice.tsx
+│   │       └── Scene9_Ending.tsx
+│   ├── lib/
+│   │   ├── cloudflare.ts
+│   │   ├── ai.ts
+│   │   └── utils.ts
+│   ├── stores/
+│   │   ├── builderStore.ts
+│   │   ├── draftStore.ts
+│   │   ├── sceneStore.ts
+│   │   └── experienceStore.ts
+│   ├── types/
+│   │   └── index.ts
+│   └── hooks/
+│       ├── useAutoSave.ts
+│       └── useLongPress.ts
+├── .env.local
+├── .gitignore
+├── tailwind.config.ts
+├── postcss.config.js
+├── next.config.js
+├── package.json
+└── tsconfig.json
