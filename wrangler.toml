@@ -1,0 +1,13 @@
+name = "one-last-letter"
+main = ".open-next/worker.js"
+compatibility_date = "2026-06-04"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "one-last-letter"
+database_id = "3fe4f037-df8b-4bf3-a614-df0983624c8a"

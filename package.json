@@ -38,5 +38,11 @@
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.4.2"
-  }
+  },
+  "scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "preview": "npx @opennextjs/cloudflare build && wrangler dev",
+"deploy": "npx @opennextjs/cloudflare build && wrangler deploy"
+}
 }
